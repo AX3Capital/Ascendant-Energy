@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Ship, Zap, ShieldCheck, Factory, 
-  ArrowRight, X, Globe, Anchor, BatteryCharging
+  ArrowRight, X, Globe, BatteryCharging,
+  Database, Shield, Lock
 } from 'lucide-react';
 
 export default function CalaOfftakerApp() {
@@ -239,6 +240,107 @@ export default function CalaOfftakerApp() {
     </section>
   );
 
+  const AxialProject = () => (
+    <section className="py-24 bg-[#020617] relative overflow-hidden border-t border-b border-emerald-500/10">
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent"></div>
+      <div className="absolute -left-[20%] top-0 w-[50%] h-[50%] bg-emerald-900/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+
+        <div className="mb-16 max-w-3xl">
+          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold tracking-[0.2em] rounded uppercase">
+            Upstream OpCo | Ascendant Upstream SPV
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-6">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500">The Physical Anchor.</span>
+          </h2>
+          <p className="text-lg text-slate-400 font-light leading-relaxed border-l-2 border-emerald-500/30 pl-6">
+            Functioning as a heavily ring-fenced, bankruptcy-remote entity, Ascendant Upstream aggregates stranded natural gas directly at the wellhead. We secure the physical molecule to feed the broader AX3 downstream ecosystem without exposing upstream LP capital to international logistics risk.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+
+          <div className="bg-[#0a0f1c] border border-slate-800 hover:border-emerald-500/30 transition-colors rounded-2xl p-8">
+            <div className="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 rounded-lg flex items-center justify-center mb-6">
+              <Database className="w-6 h-6 text-emerald-400" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-3">1.0 Bcf/d Aggregation</h3>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              Targeting distressed Proved Developed Producing (PDP) reserves and stranded Marcellus surface rights to lock in a fixed-cost molecular baseload.
+            </p>
+          </div>
+
+          <div className="bg-[#0a0f1c] border border-slate-800 hover:border-emerald-500/30 transition-colors rounded-2xl p-8">
+            <div className="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 rounded-lg flex items-center justify-center mb-6">
+              <Lock className="w-6 h-6 text-emerald-400" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-3">Bankruptcy-Remote</h3>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              Structurally isolated from Ascendant Americas. The Upstream vehicle strictly capitalizes the extraction and gathering infrastructure, eliminating cross-default contagion.
+            </p>
+          </div>
+
+          <div className="bg-[#0a0f1c] border border-slate-800 hover:border-emerald-500/30 transition-colors rounded-2xl p-8">
+            <div className="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 rounded-lg flex items-center justify-center mb-6">
+              <Zap className="w-6 h-6 text-emerald-400" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-3">Thermal-to-Digital</h3>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              Direct, on-site monetization. Selling raw thermal energy to co-located Ascendant Compute data centers via arm&apos;s-length Master Service Agreements (MSAs).
+            </p>
+          </div>
+
+        </div>
+
+        <div className="bg-[#050810] border border-slate-800 rounded-2xl p-8 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-900/10 blur-[80px] rounded-full pointer-events-none"></div>
+
+          <h3 className="text-lg font-bold text-white mb-8 text-center">Master Structural Architecture</h3>
+
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+
+            <div className="w-full md:w-1/4 text-center px-4 py-6 bg-slate-900/50 border border-slate-700 rounded-xl relative z-10">
+              <Shield className="w-8 h-8 text-slate-300 mx-auto mb-3" />
+              <div className="font-bold text-white text-sm">AX3 CAPITAL</div>
+              <div className="text-[10px] text-slate-400 uppercase tracking-wider mt-1">Master HoldCo</div>
+            </div>
+
+            <div className="hidden md:flex flex-col gap-4 items-center justify-center">
+              <ArrowRight className="w-6 h-6 text-emerald-500 -translate-y-6" />
+              <ArrowRight className="w-6 h-6 text-cyan-500 translate-y-6" />
+            </div>
+
+            <div className="w-full md:w-2/3 flex flex-col gap-4 relative z-10">
+              <div className="flex items-center justify-between px-6 py-4 bg-emerald-950/20 border border-emerald-500/30 rounded-xl">
+                <div>
+                  <div className="font-bold text-emerald-400 text-sm">ASCENDANT UPSTREAM SPV</div>
+                  <div className="text-[10px] text-slate-400 uppercase tracking-wider mt-1">The Supplier</div>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between px-6 py-4 bg-cyan-950/20 border border-cyan-500/30 rounded-xl">
+                <div>
+                  <div className="font-bold text-cyan-400 text-sm">ASCENDANT AMERICAS SPV</div>
+                  <div className="text-[10px] text-slate-400 uppercase tracking-wider mt-1">Downstream Logistics (The Buyer)</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="mt-8 text-center">
+            <span className="inline-block px-4 py-1.5 bg-slate-900 border border-slate-700 rounded-full text-xs text-slate-400 font-medium">
+              * Protected by Arm&apos;s-Length Firm Gas Supply Agreements (FGSA)
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
+
   const ContactModal = () => {
     if (!contactOpen) return null;
     return (
@@ -283,6 +385,7 @@ export default function CalaOfftakerApp() {
       <main>
         <HeroSection />
         <LogisticsArchitecture />
+        <AxialProject />
         <RegionalNodes />
       </main>
       <footer className="bg-[#020617] border-t border-slate-900 py-8 text-center text-xs text-slate-600 font-mono tracking-wider">
