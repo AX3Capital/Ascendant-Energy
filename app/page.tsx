@@ -168,7 +168,7 @@ export default function CalaOfftakerApp() {
             </div>
             <h3 className="text-xl font-bold text-white mb-3">1.0 Bcf/d Aggregation</h3>
             <p className="text-sm text-slate-400 leading-relaxed">
-              Targeting distressed Proved Developed Producing (PDP) reserves and stranded Marcellus surface rights to lock in a fixed-cost molecular baseload.
+              Securing long-term offtake from U.S. Gulf Coast liquefaction facilities to lock in a fixed-cost, dollar-denominated LNG baseload for the AX3 downstream ecosystem.
             </p>
           </div>
 
