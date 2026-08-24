@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Ship, Zap, ShieldCheck, Factory, 
-  ArrowRight, X, Globe, BatteryCharging,
-  Database, Shield, Lock
+  X, Globe, BatteryCharging,
+  Database, Lock
 } from 'lucide-react';
 import OperationalMap from '@/components/ascendant/operational-map';
 
@@ -197,42 +197,50 @@ export default function CalaOfftakerApp() {
         <div className="bg-[#050810] border border-slate-800 rounded-2xl p-8 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-900/10 blur-[80px] rounded-full pointer-events-none"></div>
 
-          <h3 className="text-lg font-bold text-white mb-8 text-center">Master Structural Architecture</h3>
+          <h3 className="text-lg font-bold text-white mb-2 text-center">The Offtaker Advantage</h3>
+          <p className="text-sm text-slate-400 text-center max-w-2xl mx-auto mb-8 leading-relaxed">
+            Our fully-integrated supply chain translates directly into tangible value for utilities, industrials, and sovereign offtakers across the AX3 downstream ecosystem.
+          </p>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 relative z-10">
 
-            <div className="w-full md:w-1/4 text-center px-4 py-6 bg-slate-900/50 border border-slate-700 rounded-xl relative z-10">
-              <Shield className="w-8 h-8 text-slate-300 mx-auto mb-3" />
-              <div className="font-bold text-white text-sm">AX3 CAPITAL</div>
-              <div className="text-[10px] text-slate-400 uppercase tracking-wider mt-1">Master HoldCo</div>
+            <div className="px-5 py-6 bg-slate-900/50 border border-slate-700 rounded-xl">
+              <BatteryCharging className="w-7 h-7 text-cyan-400 mb-4" />
+              <div className="font-bold text-white text-sm mb-2">Reliable Baseload Power</div>
+              <p className="text-[12px] text-slate-400 leading-relaxed">
+                Firm, dispatchable generation that runs 24/7 — displacing intermittent supply and diesel gensets with grid-grade stability.
+              </p>
             </div>
 
-            <div className="hidden md:flex flex-col gap-4 items-center justify-center">
-              <ArrowRight className="w-6 h-6 text-emerald-500 -translate-y-6" />
-              <ArrowRight className="w-6 h-6 text-cyan-500 translate-y-6" />
+            <div className="px-5 py-6 bg-slate-900/50 border border-slate-700 rounded-xl">
+              <Lock className="w-7 h-7 text-cyan-400 mb-4" />
+              <div className="font-bold text-white text-sm mb-2">Fixed-Cost Energy Security</div>
+              <p className="text-[12px] text-slate-400 leading-relaxed">
+                Long-term, dollar-denominated pricing insulates offtakers from fuel-oil volatility and FX shocks across the contract term.
+              </p>
             </div>
 
-            <div className="w-full md:w-2/3 flex flex-col gap-4 relative z-10">
-              <div className="flex items-center justify-between px-6 py-4 bg-emerald-950/20 border border-emerald-500/30 rounded-xl">
-                <div>
-                  <div className="font-bold text-emerald-400 text-sm">ASCENDANT UPSTREAM SPV</div>
-                  <div className="text-[10px] text-slate-400 uppercase tracking-wider mt-1">The Supplier</div>
-                </div>
-              </div>
+            <div className="px-5 py-6 bg-slate-900/50 border border-slate-700 rounded-xl">
+              <Zap className="w-7 h-7 text-cyan-400 mb-4" />
+              <div className="font-bold text-white text-sm mb-2">Lower Emissions</div>
+              <p className="text-[12px] text-slate-400 leading-relaxed">
+                Switching from HFO and diesel to natural gas cuts CO₂, SOx, and particulates — advancing offtaker decarbonization targets.
+              </p>
+            </div>
 
-              <div className="flex items-center justify-between px-6 py-4 bg-cyan-950/20 border border-cyan-500/30 rounded-xl">
-                <div>
-                  <div className="font-bold text-cyan-400 text-sm">ASCENDANT AMERICAS SPV</div>
-                  <div className="text-[10px] text-slate-400 uppercase tracking-wider mt-1">Downstream Logistics (The Buyer)</div>
-                </div>
-              </div>
+            <div className="px-5 py-6 bg-slate-900/50 border border-slate-700 rounded-xl">
+              <ShieldCheck className="w-7 h-7 text-cyan-400 mb-4" />
+              <div className="font-bold text-white text-sm mb-2">Contractual Firmness</div>
+              <p className="text-[12px] text-slate-400 leading-relaxed">
+                Bankruptcy-remote SPVs and firm supply agreements guarantee molecule delivery, de-risking offtaker operations end-to-end.
+              </p>
             </div>
 
           </div>
 
           <div className="mt-8 text-center">
             <span className="inline-block px-4 py-1.5 bg-slate-900 border border-slate-700 rounded-full text-xs text-slate-400 font-medium">
-              * Protected by Arm&apos;s-Length Firm Gas Supply Agreements (FGSA)
+              * Underpinned by Arm&apos;s-Length Firm Gas Supply Agreements (FGSA)
             </span>
           </div>
 
